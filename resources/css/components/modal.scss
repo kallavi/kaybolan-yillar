@@ -5,6 +5,7 @@
     .modal-dialog{
         @media screen and (max-width:991.98px) {
             max-width: initial;
+            padding: 12px;
         }
     }
     .btn-close{
@@ -21,7 +22,7 @@
         @media screen and (max-width:992px) {
             width: 32px;
             height: 32px;
-
+            background-image: url('../images/icons/close-white.svg');
         }
         @media screen and (min-width:992px) {
             &:hover{
@@ -51,6 +52,9 @@
             padding: 15px;
             background-color: #474747;
             margin-bottom: 0;
+            @media screen and (max-width:991.98px) {
+                text-align: center;
+            }
         }
     }
 }

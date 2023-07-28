@@ -85,6 +85,7 @@
 
                     @media screen and (max-width:1440px) {
                         font-size: 24px;
+                        line-height: 24px;
                     }
                     @media screen and (max-width: 1200px) {
                         font-size: 15px;
@@ -94,6 +95,7 @@
                         margin-left: 0;
                         min-width: 150px;
                     }
+  
                     .wrap1 {
                         background: #474747;
                         position: relative;
@@ -106,6 +108,7 @@
                         transition: all .3s linear;
                         @media screen and (max-width:1440px) {
                             font-size: 24px;
+                            line-height: 24px;
                         }
                         @media screen and (max-width: 1200px) {
                             font-size: 15px;
@@ -129,6 +132,7 @@
                       
                         @media screen and (max-width:1440px) {
                             font-size: 24px;
+                            line-height: 24px;
                         }
                         @media screen and (max-width: 1200px) {
                             font-size: 15px;
@@ -176,6 +180,10 @@
                     @media screen and (max-width:380px) {
                         max-height: 168px;
                     }
+                    @media screen and (max-height:600px) {
+                        max-height: 150px;
+                        margin: 0 auto;
+                     }
                 }
             }
         }
@@ -250,6 +258,7 @@
                     align-items: center;
                 }
                 .imageFrame{
+
                     @media screen and (max-width:768px) {
                        max-width: 107px;
                        margin-right: 10px;
