@@ -25,7 +25,7 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="{{asset ('ms-icon-144x144.png')}}">
   <meta name="theme-color" content="#ffffff">
-  <title>Kaybolan Yıllar</title>
+  <title>İstanbul'un Kaybolan Yılları</title>
 
   <style type="text/css">
     .preloader {
