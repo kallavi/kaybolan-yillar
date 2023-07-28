@@ -79,27 +79,43 @@
                     }
                 }
                 .tag{
-                    border-left: 4px solid #474747;
                     transform: rotate(-1.4deg);
                     transition: all .3s linear;
 
-                    @media screen and (max-width:1440px) {
-                        font-size: 24px;
-                        line-height: 24px;
-                    }
                     @media screen and (max-width: 1200px) {
                         font-size: 15px;
-                        line-height: normal;
                         letter-spacing: -1.65px;
                         min-height: initial;
                         margin-left: 0;
                         min-width: 150px;
                     }
-  
+                    .wrapWrapper{
+                        background: #474747;
+                        position: relative;
+                        left: -20px;
+                        font-size: 30px;
+                        letter-spacing: -3.3px;
+                        color: #FFF;
+                        font-family:'amertype_md_btmedium';
+                        line-height: 34px;
+                        transition: all .3s linear;
+                        @media screen and (max-width:1440px) {
+                            font-size: 24px;
+                            line-height: 24px;
+                        }
+                        @media screen and (max-width: 1200px) {
+                            font-size: 15px;
+                            line-height: normal;
+                            letter-spacing: -1.65px;
+                            min-height: initial;
+                            margin-left: 0;
+                            min-width: 150px;
+                        }
+                    }
                     .wrap1 {
                         background: #474747;
                         position: relative;
-                        left: 10px;
+                        left: 20px;
                         font-size: 30px;
                         letter-spacing: -3.3px;
                         color: #FFF;
