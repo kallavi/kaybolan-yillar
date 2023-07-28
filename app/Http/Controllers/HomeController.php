@@ -34,7 +34,7 @@ class HomeController extends Controller
                                     </div>
                                     <div class="desc">
                                         <span class="count">' . $item->subtitle  . '</span>
-                                        <div class="tag"><span class="wrap1"><span class="wrap2">' . $item->title . '</span></span></div>
+                                        <div class="tag"><span class="wrapWrapper"><span class="wrap1"><span class="wrap2">' . $item->title . '</span></span></span></div>
                                     </div>
                                 </div>
                             </div>';

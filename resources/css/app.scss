@@ -50,6 +50,48 @@ body {
         background-size: cover;
         background-position: top center;
     }
+    .load-more{
+        background-color: rgba(0,0,0,0);
+        border: none;
+        box-shadow: none;
+        outline: 0;
+        border-left: 3px solid #E80D0D;
+        border-radius:0!important;
+        @media screen and (max-width:768px) {
+            font-size: 24px;
+            line-height: 24px;
+        }
+        .wrap1 {
+            background: #E80D0D;
+            position: relative;
+            left: 10px;
+            font-size: 30px;
+            letter-spacing: -3.3px;
+            color: #FFF;
+            font-family:'amertype_md_btmedium';
+            line-height: 34px;
+            transition: all .3s linear;
+            @media screen and (max-width:768px) {
+                font-size: 24px;
+                line-height: 24px;
+            }
+        }
+        .wrap2 {
+            background: #E80D0D;
+            position: relative;
+            left: -10px;
+            font-size: 30px;
+            letter-spacing: -3.3px;
+            color: #FFF;
+            font-family:'amertype_md_btmedium';
+            line-height: 34px;
+            transition: all .3s linear;
+            @media screen and (max-width:768px) {
+                font-size: 24px;
+                line-height: 24px;
+            }
+        }
+    }
     .headTitle {
         @media screen and (max-width: 768px) {
             position: absolute;
@@ -232,6 +274,9 @@ body {
 
     .paragraph {
         padding-left: 15px;
+        @media screen and (max-width: 1200px) {
+            text-align: center;
+        }
         mark {
             font-size: 60px;
             line-height: 68px;
@@ -266,12 +311,23 @@ body {
             background-color: rgba(0, 0, 0, 0);
             border-left: 6px solid #474747;
             padding: 0;
-            @media screen and (max-width: 991.98px) {
+            @media screen and (max-width: 1200px) {
                 border-left: none;
+            }
+            .wrapWrapper{
+                background: #474747;
+                position: relative;
+                left: -20px;
+                font-size: 30px;
+                letter-spacing: -3.3px;
+                color: #FFF;
+                font-family:'amertype_md_btmedium';
+                line-height: 34px;
+                transition: all .3s linear;
             }
             .wrap1 {
                 position: relative;
-                left: 10px;
+                left: 20px;
                 background: #474747;
             }
             .wrap2 {

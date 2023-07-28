@@ -1,7 +1,7 @@
 @extends('layout.layout')
 
 @section('content')
-    <section id="homeSection" class="position-relative min-h-screen 2xl:pt-[10.4vh] xl:pt-[8.4vh] lg:pt-[6.4vh] 2xl:pb-[2.5vh] xl:pb-[1.5vh] lg:pb-[1vh] pt-[60px]">
+    <section id="homeSection" class="position-relative min-h-screen 2xl:pt-[9.8vh] xl:pt-[8.4vh] lg:pt-[6.4vh] 2xl:pb-[2.5vh] xl:pb-[1.5vh] lg:pb-[1vh] pt-[60px]">
         <div class="headTitle w-100 text-center">
             <img class="d-none d-md-block mx-auto" src="{{ asset('assets/images/kaybolan-yillar-title.svg') }}" alt="">
             <img class="d-block d-md-none mx-auto" src="{{ asset('assets/images/kaybolan-yillar-title-mobile.svg') }}" alt="">
@@ -18,7 +18,7 @@
                             </div>
                             <div class="desc">
                                 <span class="count">{{ $item->subtitle }}</span>
-                                <div class="tag"><span class="wrap1"><span class="wrap2">{{ $item->title }}</span></span></div>
+                                <div class="tag"><span class="wrapWrapper"><span class="wrap1"><span class="wrap2">{{ $item->title }}</span></span></span></div>
                             </div>
                         </div>
                     </div>
@@ -33,7 +33,7 @@
             </a>
         </div>
     </section>
-    <section id="allCardsSection" class="md:pb-[214px] pb-[54px]">
+    <section id="allCardsSection" class="md:pb-[110px] pb-[54px]">
         <div class="cards d-flex justify-content-center flex-wrap cardDiv" id="cardDiv">
 
 
@@ -55,20 +55,8 @@
         </div>
     </section>
 
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div>
-        <button class="btn btn-primary load-more"  >Devamı</button>
+    <div class="mx-auto text-center w-100 md:pb-[70px] pb-[40px]">
+        <button class="btn btn-primary load-more shadow-none hover:shadow-none rounded-none p-0 rounded-tl-0 rounded-bl-0"><span class="wrap1"><span class="wrap2">Devamı</span></span></button>
     </div>
     <!----Detay Modal Başlangıc-->
     <div class="modal fade" id="cardModal" tabindex="-1" aria-labelledby="cardModalLabel" aria-hidden="true">
@@ -81,9 +69,9 @@
                     </div>
                     <div class="paragraph col-sm-10">
                         <span class="count d-block d-lg-none" id="modal-subtitle">45 DK+</span>
-                        <p><span class="wrap1">
+                        <p><span class="wrapWrapper"><span class="wrap1">
                             <span class="wrap2" id="modal-description">Arızalanan İETT otobüsleri trafiği kilitleme devam
-                                    ediyor.</span></span></p>
+                                    ediyor.</span></span></span></p>
                     </div>
                 </div>
             </div>
