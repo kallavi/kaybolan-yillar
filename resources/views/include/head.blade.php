@@ -61,6 +61,6 @@
 
 
   @yield('style')
-  @vite(['resources/js/style.js'])
+  {{-- <script type="module" src="{{ mix('public/assets/style.js') }}"></script> --}}
   @vite(['resources/css/app.scss'])
 </head>

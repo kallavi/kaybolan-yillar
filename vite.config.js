@@ -1,6 +1,6 @@
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
-import Unocss from "unocss/vite";
+// import Unocss from "unocss/vite";
 
 
 export default defineConfig({
@@ -9,10 +9,7 @@ export default defineConfig({
             input: ['resources/assets/css/app.scss', 'resources/js/app.js','resources/js/script.js'],
             refresh: true,
         }),
-        UnoCSS({
-            input: ['resources/js/style.js'],
-            refresh: true,
-        }),
+        // Unocss()
     ],
 
 });
