@@ -57,6 +57,7 @@ body {
         outline: 0;
         border-left: 3px solid #E80D0D;
         border-radius:0!important;
+        transition: all .3s linear;
         @media screen and (max-width:768px) {
             font-size: 24px;
             line-height: 24px;
@@ -89,6 +90,15 @@ body {
             @media screen and (max-width:768px) {
                 font-size: 24px;
                 line-height: 24px;
+            }
+        }
+        @media screen and (min-width:992px) {
+            &:hover{
+                border-left: 3px solid #474747;
+                .wrap1,
+                .wrap2{
+                    background: #474747;
+                }
             }
         }
     }
