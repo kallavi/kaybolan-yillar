@@ -93,6 +93,8 @@ body {
         }
     }
     .headTitle {
+        position: absolute;
+        top:10.4vh;
         @media screen and (max-width: 768px) {
             position: absolute;
             //    top:10vh;
@@ -106,6 +108,9 @@ body {
             }
             @media screen and (max-width: 480px) {
                 max-width: 80%;
+                @media screen and (max-height: 630px) {
+                    width: 120px;
+                }
             }
         }
     }
@@ -113,6 +118,12 @@ body {
     #homeSection {
         height: -webkit-fill-available;
         height: 100vh;
+        padding-top: calc(7.5vh + 145px);
+        padding-bottom: 220px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
         @media screen and (max-width: 768px) {
             display: flex;
             flex-direction: column;
@@ -120,73 +131,107 @@ body {
             justify-content: center;
             padding-bottom: 70px;
         }
+        @media screen and (max-width: 1440px), 
+        screen and (min-width: 1921px) and (max-height: 1130px), 
+        screen and (max-height: 1000px){
+            padding-bottom: 100px;
+        }
+        @media screen and (max-width:768px) {
+            padding-top: 150px;
+            padding-bottom: 245px;
+        }
     }
-    .carouselWrapper {
-        height: calc(100% - 398px);
-        // height: 455px;
+    // .carouselWrapper {
+    //     height: calc(100% - 398px);
+    //     // height: 455px;
 
       
-        @media screen and (max-width: 1440px),
-        screen and (max-height: 1000px) {
-            height: calc(100% - 186px);
-            @media screen and (min-height: 750px) {
-                min-height: 454px;
-            }
-        }
-        @media screen and (max-width: 1024px) {
-            height: calc(100% - 160px);
-            @media screen and (min-height: 700px) {
-                min-height: 454px;
-            }
-        }
+    //     @media screen and (max-width: 1440px),
+    //     screen and (max-height: 1000px) {
+    //         height: calc(100% - 186px);
+    //         @media screen and (min-height: 750px) {
+    //             min-height: 454px;
+    //         }
+    //     }
+    //     @media screen and (max-width: 1024px) {
+    //         height: calc(100% - 160px);
+    //         @media screen and (min-height: 700px) {
+    //             min-height: 454px;
+    //         }
+    //     }
 
-        @media screen and (max-width: 768px),
-        screen and (max-width: 991.98px) {
-            height: 350px;
-            min-height: initial;
-            @media screen and (max-height: 800px) {
-                height: 300px;
-                margin-top: -50px;
-            }
-            @media screen and (max-height: 630px) {
-                height: 260px;
-                padding-top: 25px;
-                margin-top: 0;
-            }
+    //     @media screen and (max-width: 768px),
+    //     screen and (max-width: 991.98px) {
+    //         height: 350px;
+    //         min-height: initial;
+    //         @media screen and (max-height: 800px) {
+    //             height: 300px;
+    //             margin-top: -50px;
+    //         }
+    //         @media screen and (max-height: 630px) {
+    //             height: 260px;
+    //             padding-top: 25px;
+    //             margin-top: 0;
+    //         }
 
-            @media screen and (max-height: 600px) {
-                height: 280px;
-                padding-top: 0;
-                margin-top: -25px;
-            }
-            @media screen and (max-height: 550px) {
-                max-height: 250px;
-            }
-        }
-        @media screen and (max-width: 991.98px) {
-            height: 454px;
-        }
-        @media screen and (max-width:480px) {
-            margin-top: 0;
-            max-height: 230px;
-            @media screen and (min-height:630px) {
-                max-height: 270px;
-            }
-            // @media screen and (min-height:665px) {
-            //     max-height: 245px;
-            // }
-            @media screen and (min-height:730px) {
-                max-height:350px;
-            }
+    //         @media screen and (max-height: 600px) {
+    //             height: 280px;
+    //             padding-top: 0;
+    //             margin-top: -25px;
+    //         }
+    //         @media screen and (max-height: 550px) {
+    //             max-height: 250px;
+    //         }
+    //     }
+    //     @media screen and (max-width: 991.98px) {
+    //         height: 454px;
+    //     }
+    //     @media screen and (max-width:480px) {
+    //         margin-top: 0;
+    //         max-height: 230px;
+    //         @media screen and (min-height:630px) {
+    //             max-height: 270px;
+    //         }
+    //         // @media screen and (min-height:665px) {
+    //         //     max-height: 245px;
+    //         // }
+    //         @media screen and (min-height:730px) {
+    //             max-height:350px;
+    //         }
             
-        }
-        @media screen and (min-width: 1921px) and (max-height:1130px){
-            height: calc(100% - 180px);
-            @media screen and (min-height: 750px) {
-                min-height: 454px;
-            }
-        }
+    //     }
+    //     @media screen and (min-width: 1921px) and (max-height:1130px){
+    //         height: calc(100% - 180px);
+    //         @media screen and (min-height: 750px) {
+    //             min-height: 454px;
+    //         }
+    //     }
         
+    // }
+    .kaybolanYillarSlide{
+        height: 487px;
+        @media screen and (max-width:768px) {
+            height: 300px;
+            @media screen and (max-height:630px) {
+                height: 240px;
+            }
+            @media screen and (min-height:631px) {
+                height: 285px;
+            }
+   
+            @media screen and (min-height:801px) {
+                height: 340px;
+            }
+            // @media screen and (max-height:800px) {
+            //     height: 285px;
+            // }
+        }
+        // @media screen and (max-width:480px) {
+        //     height: 240px;
+        //     @media screen and (max-height:800px) {
+        //         height: 285px;
+        //     }
+        // }
     }
     #yearCounter {
         color: #3c3c3c;
@@ -195,6 +240,8 @@ body {
         font-size: 300px;
         line-height: 220px;
         letter-spacing: -33px;
+        position: absolute;
+        bottom: 30px;
 
         @media screen and (max-width: 1440px),
             screen and (min-width: 1921px) and (max-height:1130px) ,
@@ -212,7 +259,9 @@ body {
             font-size: 60px;
             line-height: 58px;
             letter-spacing: -6.6px;
-            position: relative;
+        }
+        @media screen and (max-width:991.98px) {
+            bottom: 29vh;
         }
 
     }

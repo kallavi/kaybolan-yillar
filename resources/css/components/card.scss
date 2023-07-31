@@ -43,8 +43,11 @@
                 justify-content: center;
                 aspect-ratio: 4/3.8;
                 overflow: hidden;
+                margin: 0 auto;
                 max-height: 306px;
-
+                @media screen and (max-width:768px) {
+                    margin-left: 0;   
+                }
                 img {
                     width: 100%;
                     min-height: 100%;
@@ -54,7 +57,7 @@
             .desc {
                 position: absolute;
                 bottom: -47px;
-                left: 22px;
+                left: 44px;
                 @media screen and (max-width: 1440px) {
                     bottom: -28px;
                 }
@@ -187,6 +190,9 @@
                 }
             }
             .card-body {
+                @media screen and (max-width:991.98px) {
+                    padding:0 20px;
+                }
                 .imageFrame {
                     @media screen and (max-width: 768px) {
                         max-height: 250px;
@@ -220,15 +226,41 @@
             margin: 87px 0;
             border-radius: 0;
 
-            @media screen and (max-width: 1866px) {
+            @media screen and (max-width: 768px) {
+                width: 100%;
+                margin: 0px 0;
+                padding: 3px 0;
+                border-bottom: 2px solid #161616;
+
+                // &:nth-child(5n-1) {
+                //     // background-color: yellow;
+                //     top: 0;
+                // }
+                // &:nth-child(5n + 1) {
+                //     // background-color: purple;
+                //     top: 0;
+                // }
+                // &:nth-child(5n-2) {
+                //     // background-color: blue;
+                //     top: 0;
+                // }
+                // &:nth-child(5n-3) {
+                //     // background-color: red;
+                //     top: 0;
+                // }
+                // &:nth-child(5n) {
+                //     // background-color: white;
+                //     top: 0;
+                // }
+            }
+            @media screen and (min-width:769px) {
                 top: 68px;
                 &:nth-child(2n + 1) {
                     // background-color: yellow;
                     top: -24px;
                 }
             }
-            @media screen and (max-width: 1866px) and (min-width: 943px) {
-                top: auto;
+            @media screen and (min-width: 942px) {
                 &:nth-child(3n) {
                     top: -24px;
                 }
@@ -240,70 +272,39 @@
                 }
 
             }
-            @media screen and (min-width: 1867px) and (max-width:2229px){
-                &:nth-child(5n-1) {
-                    // background-color: yellow;
-                    top: -24px;
-                }
-                &:nth-child(5n + 1) {
-                    // background-color: purple;
-                    top: 68px;
-                }
-                &:nth-child(5n-2) {
-                    // background-color: blue;
-                    top: 68px;
-                }
-                &:nth-child(5n-3) {
-                    // background-color: red;
-                    top: -24px;
-                }
-                &:nth-child(5n) {
-                    // background-color: white;
-                    top: 68px;
-                }
-            }
-            @media screen and (min-width:2230px) {
+            @media screen and (min-width: 1311px) {
                 top: 68px;
                 &:nth-child(2n + 1) {
                     // background-color: yellow;
                     top: -24px;
                 }
             }
-
-
-            @media screen and (max-width: 768px) {
-                width: 100%;
-                margin: 0px 0;
-                padding: 3px 0;
-                border-bottom: 2px solid #161616;
-
+            @media screen and (min-width: 1867px){
                 &:nth-child(5n-1) {
                     // background-color: yellow;
-                    top: 0;
+                    top: -24px;
                 }
                 &:nth-child(5n + 1) {
                     // background-color: purple;
-                    top: 0;
+                    top: 68px;
                 }
                 &:nth-child(5n-2) {
                     // background-color: blue;
-                    top: 0;
+                    top: 68px;
                 }
                 &:nth-child(5n-3) {
                     // background-color: red;
-                    top: 0;
+                    top: -24px;
                 }
                 &:nth-child(5n) {
                     // background-color: white;
-                    top: 0;
+                    top: 68px;
                 }
             }
+            @media screen and (min-width:2200px) {
+                padding: 0 50px;
+            }
 
-            //  @media screen and (max-width:380px) {
-            //    .imageFrame{
-            //     max-height: 100px;
-            //    }
-            // }
 
             .card-body {
                 @media screen and (max-width: 768px) {

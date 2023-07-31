@@ -7,7 +7,7 @@
             <img class="d-block d-md-none mx-auto" src="{{ asset('assets/images/kaybolan-yillar-title-mobile.svg') }}" alt="">
         </div>
         <div class="carouselWrapper md:pt-[25px]">
-            <div class="kaybolanYillarSlide cards lg:px-[0.5rem] h-100">
+            <div class="kaybolanYillarSlide cards">
 
                 @foreach ($highlighted as $item)
                     <div class="slideItem card wow animate__animated animate__fadeInUp animate__delay-1s" data-bs-toggle="modal" data-bs-target="#cardModal"
@@ -33,7 +33,7 @@
             </a>
         </div>
     </section>
-    <section id="allCardsSection" class="md:pb-[110px] pb-[54px]">
+    <section id="allCardsSection" class="md:pb-[110px] pb-[54px] lg:px-[1.75rem] ">
         <div class="cards d-flex justify-content-center flex-wrap cardDiv" id="cardDiv">
 
 
