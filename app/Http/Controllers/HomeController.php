@@ -26,7 +26,7 @@ class HomeController extends Controller
         foreach ($project as $item) {
 
 
-            $card .= '    <div class="card wow animate__animated animate__fadeInUp animate__faster" data-bs-toggle="modal" data-bs-target="#cardModal" data-subtitle="'.$item->subtitle .'" data-image="' . $item->image . '"
+            $card .= '    <div class="card wow animate__animated animate__fadeInUp" data-wow-duration="1s" data-bs-toggle="modal" data-bs-target="#cardModal" data-subtitle="'.$item->subtitle .'" data-image="' . $item->image . '"
                                 data-description="' . $item->description . '">
                                 <div class="card-body">
                                     <div class="imageFrame">

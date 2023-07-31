@@ -10,7 +10,7 @@
             <div class="kaybolanYillarSlide cards">
 
                 @foreach ($highlighted as $item)
-                    <div class="slideItem card wow animate__animated animate__fadeInUp animate__delay-1s" data-bs-toggle="modal" data-bs-target="#cardModal"
+                    <div class="slideItem card wow animate__animated animate__fadeInUp" data-wow-duration="1s" data-bs-toggle="modal" data-bs-target="#cardModal"
                         data-image="{{ $item->image }}" data-description="{{ $item->description }}" data-subtitle="{{ $item->subtitle }}">
                         <div class="card-body">
                             <div class="imageFrame">
@@ -56,7 +56,7 @@
     </section>
 
     <div class="mx-auto text-center w-100 md:pb-[70px] pb-[40px]">
-        <button class="btn btn-primary load-more shadow-none hover:shadow-none rounded-none p-0 rounded-tl-0 rounded-bl-0"><span class="wrap1"><span class="wrap2">Devamı</span></span></button>
+        <button class="btn btn-primary load-more shadow-none hover:shadow-none rounded-none p-0 rounded-tl-0 rounded-bl-0"><span class="wrap1"><span class="wrap2">Daha Fazla</span></span></button>
     </div>
     <!----Detay Modal Başlangıc-->
     <div class="modal fade" id="cardModal" tabindex="-1" aria-labelledby="cardModalLabel" aria-hidden="true">
