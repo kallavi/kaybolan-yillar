@@ -18,7 +18,7 @@ $('.kaybolanYillarSlide').slick({
   speed: 300,
   slidesToShow: 5,
   slidesToScroll: 3,
-  lazyLoad: 'ondemand',
+  lazyLoad: 'progressive',
   responsive: [
     {
       breakpoint: 1300,
