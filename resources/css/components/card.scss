@@ -217,6 +217,7 @@
         .card{
             padding: 0 20px;
             margin: 87px 0;
+            border-radius: 0;
             &:nth-child(5n-1) {
                 // background-color: yellow;
                 top:-24px
@@ -282,6 +283,7 @@
                     @media screen and (max-width:768px) {
                        max-width: 107px;
                        margin-right: 10px;
+                       padding: 5px;
                     }
                 }
              }
@@ -290,6 +292,7 @@
                     position: relative;
                     bottom: auto;
                     left: auto;
+                    padding-left: 20px;
                 }
                 
                 @media screen and (max-width:380px) {
