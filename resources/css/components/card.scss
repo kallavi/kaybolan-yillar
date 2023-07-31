@@ -282,7 +282,7 @@
                     top: -24px;
                 }
             }
-            @media screen and (min-width: 942px) {
+            @media screen and (min-width: 942px) and (max-width: 1310px) {
                 &:nth-child(3n) {
                     top: -24px;
                 }
@@ -294,14 +294,14 @@
                 }
 
             }
-            @media screen and (min-width: 1311px) {
+            @media screen and (min-width: 1311px) and (max-width: 1866px){
                 top: 68px;
                 &:nth-child(2n + 1) {
                     // background-color: yellow;
                     top: -24px;
                 }
             }
-            @media screen and (min-width: 1867px){
+            @media screen and (min-width: 1867px) and (max-width:2199px){
                 &:nth-child(5n-1) {
                     // background-color: yellow;
                     top: -24px;
