@@ -63,6 +63,9 @@
                 @media screen and (max-width:768px) {
                     bottom: -27px;
                 }
+                @media screen and (max-width:480px) {
+                    left: 50px;
+                }
                 .count{
                     color: #E80D0D;
                     font-family:'amertype_md_btmedium';
@@ -85,6 +88,7 @@
                 .tag{
                     transform: rotate(-1.4deg);
                     transition: all .3s linear;
+                    padding-left: 20px;
 
                     @media screen and (max-width: 1200px) {
                         font-size: 15px;
