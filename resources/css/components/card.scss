@@ -21,7 +21,10 @@
                             color: #ffffff;;
                         }
                         .tag{
-                            border-left:4px solid #E80D0D;
+                            // @media screen and (min-width: 1200px){
+                            //     border-left:4px solid #E80D0D;
+                            // }
+                            .wrapWrapper,
                             .wrap1,
                             .wrap2{
                                 background-color: #E80D0D;
