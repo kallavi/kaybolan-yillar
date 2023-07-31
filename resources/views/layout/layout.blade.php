@@ -9,7 +9,7 @@
         </div>
     </div>
     <!---Preloader End-->
-    <div id="body" class="container-fluid lg:px-[1.75rem] md:pb-[90px] pb-[54px] gx-0">
+    <div id="body" class="container-fluid md:pb-[90px] pb-[54px] gx-0">
 
         @yield('content')
 
