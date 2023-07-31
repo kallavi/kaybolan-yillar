@@ -1,7 +1,7 @@
 @extends('layout.layout')
 
 @section('content')
-    <section id="homeSection" class="position-relative min-h-screen 2xl:pt-[9.8vh] xl:pt-[8.4vh] lg:pt-[6.4vh] 2xl:pb-[2.5vh] xl:pb-[1.5vh] lg:pb-[1vh] pt-[60px]">
+    <section id="homeSection" class="position-relative min-h-screen 2xl:pt-[8.1vh] xl:pt-[8.4vh] lg:pt-[6.4vh] 2xl:pb-[2.5vh] xl:pb-[1.5vh] lg:pb-[1vh] pt-[60px]">
         <div class="headTitle w-100 text-center">
             <img class="d-none d-md-block mx-auto" src="{{ asset('assets/images/kaybolan-yillar-title.svg') }}" alt="">
             <img class="d-block d-md-none mx-auto" src="{{ asset('assets/images/kaybolan-yillar-title-mobile.svg') }}" alt="">
