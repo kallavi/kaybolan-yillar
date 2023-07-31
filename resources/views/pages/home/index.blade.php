@@ -68,7 +68,7 @@
                         <img id="modal-image" src="{{ asset('assets/images/slider/big/01.png') }}" alt="">
                     </div>
                     <div class="paragraph col-sm-10">
-                        <span class="count d-block d-lg-none" id="modal-subtitle">45 DK+</span>
+                        <span class="count d-none" id="modal-subtitle">45 DK+</span>
                         <p><span class="wrapWrapper"><span class="wrap1">
                             <span class="wrap2" id="modal-description">Arızalanan İETT otobüsleri trafiği kilitleme devam
                                     ediyor.</span></span></span></p>
