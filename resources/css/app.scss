@@ -317,18 +317,24 @@ body {
             .wrapWrapper{
                 background: #474747;
                 position: relative;
-                left: -20px;
+                left: 0;
                 font-size: 30px;
                 letter-spacing: -3.3px;
                 color: #FFF;
                 font-family:'amertype_md_btmedium';
                 line-height: 34px;
                 transition: all .3s linear;
+                @media screen and (max-width: 1200px) {
+                    left: -20px;
+                }
             }
             .wrap1 {
                 position: relative;
-                left: 20px;
+                left: 10px;
                 background: #474747;
+                @media screen and (max-width: 1200px) {
+                    left: 20px;
+                }
             }
             .wrap2 {
                 font-family: "amertype_md_btmedium";

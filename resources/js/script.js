@@ -14,7 +14,7 @@ $(".scroll_down").click(function (e) {
 $('.kaybolanYillarSlide').slick({
   dots: true,
   arrows:false,
-  infinite: true,
+  infinite: false,
   speed: 300,
   slidesToShow: 5,
   slidesToScroll: 5,
