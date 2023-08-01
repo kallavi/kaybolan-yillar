@@ -31,8 +31,8 @@ class HomeController extends Controller
                 $count = 0;
             }
 
-            if($index>5){
-                $card .= '    <div class="card wow animate__animated animate__fadeInUp animate__faster"  animate__delay-1s   data-bs-toggle="modal" data-bs-target="#cardModal" data-subtitle="' . $item->subtitle . '" data-image="' . $item->image . '"
+            if($index>4){
+                $card .= '    <div class="card wow animate__animated animate__fadeInUp animate__faster"    data-bs-toggle="modal" data-bs-target="#cardModal" data-subtitle="' . $item->subtitle . '" data-image="' . $item->image . '"
                 data-description="' . $item->description . '">
                 <div class="card-body">
                     <div class="imageFrame">
