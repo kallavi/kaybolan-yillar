@@ -22,7 +22,7 @@ class HomeController extends Controller
 
 
         $card = '';
-        $project = Project::where('status', 1)->orderByRaw('ISNULL(sort), sort ASC')->orderBy('title')->paginate($request->paginate);
+        $project = Project::where('status', 1)->where('highlighted', null)->orderByRaw('ISNULL(sort), sort ASC')->orderBy('title')->paginate($request->paginate);
         $count = 0;
 
         foreach ($project as $index => $item) {
