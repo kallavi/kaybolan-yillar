@@ -56,25 +56,26 @@
         </div>
     </section>
     <section id="allCardsSection" class="md:pb-[110px] pb-[54px] lg:px-[1.75rem] ">
-        <div class="cards d-flex justify-content-center flex-wrap cardDiv" id="cardDiv">
+            <div class="cards row row-cols-2 row-cols-xxl-5 row-cols-xl-4 row-cols-lg-3 row-cols-md-2 gx-0 px-0 mx-auto cardDiv" id="cardDiv">
+                {{-- <div class="cards d-flex justify-content-center flex-wrap cardDiv" id="cardDiv"> --}}
 
 
-            {{-- @foreach ($project as $item)
-                <div class="card wow animate__animated animate__fadeInUp animate__faster" data-bs-toggle="modal" data-bs-target="#cardModal" data-image="{{ $item->image }}"
-                    data-description="{{ $item->description }}">
-                    <div class="card-body">
-                        <div class="imageFrame">
-                            <img src="{{ asset($item->image) }}" alt="">
-                        </div>
-                        <div class="desc">
-                            <span class="count">{{ $item->subtitle  }}</span>
-                            <div class="tag"><span class="wrap1"><span class="wrap2">{{ $item->title }}</span></span></div>
+                {{-- @foreach ($project as $item)
+                    <div class="card wow animate__animated animate__fadeInUp animate__faster" data-bs-toggle="modal" data-bs-target="#cardModal" data-image="{{ $item->image }}"
+                        data-description="{{ $item->description }}">
+                        <div class="card-body">
+                            <div class="imageFrame">
+                                <img src="{{ asset($item->image) }}" alt="">
+                            </div>
+                            <div class="desc">
+                                <span class="count">{{ $item->subtitle  }}</span>
+                                <div class="tag"><span class="wrap1"><span class="wrap2">{{ $item->title }}</span></span></div>
+                            </div>
                         </div>
                     </div>
-                </div>
-            @endforeach --}}
+                @endforeach --}}
 
-        </div>
+            </div>
     </section>
 
     <div class="mx-auto text-center w-100 md:pb-[70px] pb-[40px]">
