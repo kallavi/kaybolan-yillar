@@ -33,7 +33,7 @@ class HomeController extends Controller
             if ($project->currentPage()==1) {
 
 
-                $card .= '    <div class="card wow animate__animated animate__fadeInUp animate__faster"  animate__delay-1s data-wow-duration="1.' . $count . 's" data-bs-toggle="modal" data-bs-target="#cardModal" data-subtitle="' . $item->subtitle . '" data-image="' . $item->image . '"
+                $card .= '    <div class="card wow animate__animated animate__fadeInUp"  animate__delay-1s data-wow-delay="1.' . $count . 's" data-bs-toggle="modal" data-bs-target="#cardModal" data-subtitle="' . $item->subtitle . '" data-image="' . $item->image . '"
                                 data-description="' . $item->description . '">
                                 <div class="card-body">
                                     <div class="imageFrame">
@@ -46,7 +46,7 @@ class HomeController extends Controller
                                 </div>
                             </div>';
             }else{
-                $card .= '    <div class="card "    data-bs-toggle="modal" data-bs-target="#cardModal" data-subtitle="' . $item->subtitle . '" data-image="' . $item->image . '"
+                $card .= '    <div class="card animate__animated animate__fadeInUp"  animate__delay-1s data-wow-delay="1.' . $count . 's"  data-bs-toggle="modal" data-bs-target="#cardModal" data-subtitle="' . $item->subtitle . '" data-image="' . $item->image . '"
                 data-description="' . $item->description . '">
                 <div class="card-body">
                     <div class="imageFrame">
