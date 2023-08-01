@@ -8,11 +8,26 @@
         </div>
         <div class="carouselWrapper md:pt-[25px]">
             <div class="kaybolanYillarSlide cards">
-
+                @php
+                    $count = 0;
+                @endphp
                 @foreach ($highlighted as $item)
-                @if($loop->index<5)
-                    <div class="slideItem card wow animate__animated animate__fadeInUp animate__delay-1s" data-wow-duration="1.{{$loop->index}}s" data-bs-toggle="modal" data-bs-target="#cardModal"
-                        data-image="{{ $item->image }}" data-description="{{ $item->description }}" data-subtitle="{{ $item->subtitle }}">
+                    @if ($loop->index < 5)
+                        <div class="slideItem card wow animate__animated animate__fadeInUp animate__delay-1s" data-wow-duration="1.{{ $count }}s" data-bs-toggle="modal"
+                            data-bs-target="#cardModal" data-image="{{ $item->image }}" data-description="{{ $item->description }}" data-subtitle="{{ $item->subtitle }}">
+                            <div class="card-body">
+                                <div class="imageFrame">
+                                    <img data-lazy="{{ asset($item->image) }}" alt="">
+                                </div>
+                                <div class="desc">
+                                    <span class="count">{{ $item->subtitle }}</span>
+                                    <div class="tag"><span class="wrapWrapper"><span class="wrap1"><span class="wrap2">{{ $item->title }}</span></span></span></div>
+                                </div>
+                            </div>
+                        </div>
+                        @else
+                        <div class="slideItem card wow animate__animated animate__fadeInUp animate__delay-1s" data-wow-duration="1s" data-bs-toggle="modal"
+                        data-bs-target="#cardModal" data-image="{{ $item->image }}" data-description="{{ $item->description }}" data-subtitle="{{ $item->subtitle }}">
                         <div class="card-body">
                             <div class="imageFrame">
                                 <img data-lazy="{{ asset($item->image) }}" alt="">
@@ -24,6 +39,11 @@
                         </div>
                     </div>
                     @endif
+                    @php
+                        $count++;
+                        $count++;
+                         
+                    @endphp
                 @endforeach
 
             </div>
@@ -58,7 +78,8 @@
     </section>
 
     <div class="mx-auto text-center w-100 md:pb-[70px] pb-[40px]">
-        <button class="btn btn-primary load-more shadow-none hover:shadow-none rounded-none p-0 rounded-tl-0 rounded-bl-0"><span class="wrap1"><span class="wrap2">Daha Fazla</span></span></button>
+        <button class="btn btn-primary load-more shadow-none hover:shadow-none rounded-none p-0 rounded-tl-0 rounded-bl-0"><span class="wrap1"><span class="wrap2">Daha
+                    Fazla</span></span></button>
     </div>
     <!----Detay Modal Başlangıc-->
     <div class="modal fade" id="cardModal" tabindex="-1" aria-labelledby="cardModalLabel" aria-hidden="true">
@@ -72,8 +93,8 @@
                     <div class="paragraph col-sm-10">
                         <span class="count d-none" id="modal-subtitle">45 DK+</span>
                         <p><span class="wrapWrapper"><span class="wrap1">
-                            <span class="wrap2" id="modal-description">Arızalanan İETT otobüsleri trafiği kilitleme devam
-                                    ediyor.</span></span></span></p>
+                                    <span class="wrap2" id="modal-description">Arızalanan İETT otobüsleri trafiği kilitleme devam
+                                        ediyor.</span></span></span></p>
                     </div>
                 </div>
             </div>
