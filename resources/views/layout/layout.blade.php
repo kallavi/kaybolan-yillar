@@ -96,8 +96,13 @@
                 })
                 .done(function(response) {
 
-                    div.append(response.item)
+
                     page = response.currentPage + 1
+
+                 
+                        div.append(response.item)
+                
+
 
                     // DEVAMI BUTONUNU GİZLER
                     if (response.hasMorePages == false) {
