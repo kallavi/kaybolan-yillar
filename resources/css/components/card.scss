@@ -7,6 +7,7 @@
         background-color: rgba(0, 0, 0, 0);
         padding: 0 20px;
         position: relative;
+        transition: all .3s linear;
         @media screen and (min-width: 992px) {
             &:hover {
                 cursor: pointer;
