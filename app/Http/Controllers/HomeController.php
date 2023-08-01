@@ -23,10 +23,11 @@ class HomeController extends Controller
 
         $card = '';
         $project = Project::where('status', 1)->orderByRaw('ISNULL(sort), sort ASC')->orderBy('title')->paginate($request->paginate);
+        $count = 0;
         foreach ($project as $item) {
 
 
-            $card .= '    <div class="card wow animate__animated animate__fadeInUp animate__faster" data-bs-toggle="modal" data-bs-target="#cardModal" data-subtitle="'.$item->subtitle .'" data-image="' . $item->image . '"
+            $card .= '    <div class="card wow animate__animated animate__fadeInUp animate__faster" data-wow-duration="1.' . $count . 's" data-bs-toggle="modal" data-bs-target="#cardModal" data-subtitle="' . $item->subtitle . '" data-image="' . $item->image . '"
                                 data-description="' . $item->description . '">
                                 <div class="card-body">
                                     <div class="imageFrame">
@@ -38,6 +39,8 @@ class HomeController extends Controller
                                     </div>
                                 </div>
                             </div>';
+
+            $count++;
         }
 
 
