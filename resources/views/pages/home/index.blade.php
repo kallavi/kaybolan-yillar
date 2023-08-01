@@ -10,7 +10,8 @@
             <div class="kaybolanYillarSlide cards">
 
                 @foreach ($highlighted as $item)
-                    <div class="slideItem card wow animate__animated animate__fadeInUp" data-wow-duration="1s" data-bs-toggle="modal" data-bs-target="#cardModal"
+                @if($loop->index<5)
+                    <div class="slideItem card wow animate__animated animate__fadeInUp animate__delay-1s" data-wow-duration="1.{{$loop->index}}s" data-bs-toggle="modal" data-bs-target="#cardModal"
                         data-image="{{ $item->image }}" data-description="{{ $item->description }}" data-subtitle="{{ $item->subtitle }}">
                         <div class="card-body">
                             <div class="imageFrame">
@@ -22,6 +23,7 @@
                             </div>
                         </div>
                     </div>
+                    @endif
                 @endforeach
 
             </div>
