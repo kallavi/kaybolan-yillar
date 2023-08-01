@@ -30,7 +30,7 @@
                         data-bs-target="#cardModal" data-image="{{ $item->image }}" data-description="{{ $item->description }}" data-subtitle="{{ $item->subtitle }}">
                         <div class="card-body">
                             <div class="imageFrame">
-                                <img data-lazy="{{ asset($item->image) }}" alt="">
+                                <img src="{{ asset($item->image) }}" alt="">
                             </div>
                             <div class="desc">
                                 <span class="count">{{ $item->subtitle }}</span>
