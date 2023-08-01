@@ -7,7 +7,7 @@
             <img class="d-block d-md-none mx-auto" src="{{ asset('assets/images/kaybolan-yillar-title-mobile.svg') }}" alt="">
         </div>
         <div class="carouselWrapper md:pt-[25px]">
-            <div class="kaybolanYillarSlide cards lg:px-[0.5rem] h-100">
+            <div class="kaybolanYillarSlide cards">
 
                 @foreach ($highlighted as $item)
                 @if($loop->index<5)
@@ -35,7 +35,7 @@
             </a>
         </div>
     </section>
-    <section id="allCardsSection" class="md:pb-[110px] pb-[54px]">
+    <section id="allCardsSection" class="md:pb-[110px] pb-[54px] lg:px-[1.75rem] ">
         <div class="cards d-flex justify-content-center flex-wrap cardDiv" id="cardDiv">
 
 
@@ -70,7 +70,7 @@
                         <img id="modal-image" src="{{ asset('assets/images/slider/big/01.png') }}" alt="">
                     </div>
                     <div class="paragraph col-sm-10">
-                        <span class="count d-block d-lg-none" id="modal-subtitle">45 DK+</span>
+                        <span class="count d-none" id="modal-subtitle">45 DK+</span>
                         <p><span class="wrapWrapper"><span class="wrap1">
                             <span class="wrap2" id="modal-description">Arızalanan İETT otobüsleri trafiği kilitleme devam
                                     ediyor.</span></span></span></p>

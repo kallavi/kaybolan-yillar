@@ -1,5 +1,6 @@
 .slick-slider{
     height: 100%;
+    position: initial;
     .slick-list{
         height: 100%;
     }
@@ -9,50 +10,66 @@
         
     .slick-dots{
         width: auto;
-        // bottom: -131px;
-        bottom: -12.2vh;
-        left: 55px;
-        @media screen and (max-width:1440px) ,
-        screen and (min-width: 1921px) and (max-height:1130px),
-        screen and (max-height: 1000px) {
-            bottom: -4.4vh;
+        left: 75px;
+        bottom: 125px;
+        position: absolute;
+        // // bottom: -131px;
+        // bottom: -12.2vh;
+        // left: 55px;
+        // @media screen and (max-width:1440px) ,
+        // screen and (min-width: 1921px) and (max-height:1130px),
+        // screen and (max-height: 1000px) {
+        //     bottom: -4.4vh;
+        // }
+        // @media screen and (max-width:991.98px) {
+        //     width: auto;
+        //     // bottom: -85px;
+        //     // bottom: -17.7vh;
+        //     bottom: auto;
+        //     // top:100%;
+        //     left: 0;
+        //     right: 0;
+        //     margin: 0 auto;
+        //     top:calc(100% + 53px);
+        //     // @media screen and (max-height:740px) {
+        //     //     top:calc(100% + 7vh);
+        //     // }
+        //     // @media screen and (max-height:700px) {
+        //     //     top:calc(100% + 7vh);
+        //     // }
+
+        //     // @media screen and (min-height:610px) {
+        //     //     bottom: -18vh;
+        //     // }
+        //     // @media screen and (min-height:612px) {
+        //     //     bottom: -14vh;
+        //     // }
+        //     // @media screen and (min-height:700px) {
+        //     //     // bottom: -21vh;
+        //     //     bottom: -12vh;
+        //     // }
+        //     // @media screen and (min-height:760px) {
+        //     //     bottom: -15vh;
+        //     // }
+        //     // @media screen and (min-height:820px) {
+        //     //     bottom: -18vh;
+        //     // }
+        // }
+        // @media screen and (min-width: 1921px) and (min-height:1700px) {
+        //     bottom: -9.2vh;
+        // }
+        @media screen and (max-width: 1440px), 
+        screen and (min-width: 1921px) and (max-height: 1130px), 
+        screen and (max-height: 1000px){
+            bottom: 50px;
         }
-        @media screen and (max-width:768px) {
-            width: auto;
-            // bottom: -85px;
-            // bottom: -17.7vh;
-            bottom: auto;
-            // top:100%;
+        @media screen and (max-width:991.98px) {
             left: 0;
             right: 0;
             margin: 0 auto;
-            top:calc(100% + 53px);
-            // @media screen and (max-height:740px) {
-            //     top:calc(100% + 7vh);
-            // }
-            // @media screen and (max-height:700px) {
-            //     top:calc(100% + 7vh);
-            // }
-
-            // @media screen and (min-height:610px) {
-            //     bottom: -18vh;
-            // }
-            // @media screen and (min-height:612px) {
-            //     bottom: -14vh;
-            // }
-            // @media screen and (min-height:700px) {
-            //     // bottom: -21vh;
-            //     bottom: -12vh;
-            // }
-            // @media screen and (min-height:760px) {
-            //     bottom: -15vh;
-            // }
-            // @media screen and (min-height:820px) {
-            //     bottom: -18vh;
-            // }
         }
-        @media screen and (min-width: 1921px) and (min-height:1700px) {
-            bottom: -9.2vh;
+        @media screen and (max-width:991.98px) {
+            bottom: 25vh;
         }
         li{
             width: 14.996px;
