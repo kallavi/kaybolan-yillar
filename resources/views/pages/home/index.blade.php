@@ -56,7 +56,7 @@
         </div>
     </section>
     <section id="allCardsSection" class="md:pb-[110px] pb-[54px] lg:px-[1.75rem] ">
-        <div class="cards d-flex justify-content-center flex-wrap cardDiv" id="cardDiv">
+        <div class="cards d-flex flex-wrap cardDiv" id="cardDiv">
 
 
             {{-- @foreach ($project as $item)
