@@ -100,5 +100,23 @@
             </div>
         </div>
     </div>
+    <div class="modal fade" id="cardModal2" tabindex="-1" aria-labelledby="cardModal2Label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <button type="button" class="btn-close shadow-none hover:shadow-none ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body row gx-0 mx-0 xl:flex flex-column flex-xl-row align-items-center">
+                    <div class="imageFrame col-sm-22">
+                        <img id="modal-image" src="{{ asset('assets/images/slider/big/01.png') }}" alt="">
+                    </div>
+                    {{-- <div class="paragraph col-sm-10">
+                        <span class="count d-none" id="modal-subtitle">45 DK+</span>
+                        <p><span class="wrapWrapper"><span class="wrap1">
+                                    <span class="wrap2" id="modal-description">Arızalanan İETT otobüsleri trafiği kilitleme devam
+                                        ediyor.</span></span></span></p>
+                    </div> --}}
+                </div>
+            </div>
+        </div>
+    </div>
     <!----Detay Modal Bitiş-->
 @endsection

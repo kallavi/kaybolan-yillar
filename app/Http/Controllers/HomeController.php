@@ -33,26 +33,26 @@ class HomeController extends Controller
             if ($project->currentPage() == 1) {
 
 
-                $card .= '    <div class="card wow animate__animated animate__fadeInUp" data-wow-delay="1.' . $count . 's" data-bs-toggle="modal" data-bs-target="#cardModal" data-subtitle="' . $item->subtitle . '" data-image="' . $item->image . '"
+                $card .= '    <div class="card wow animate__animated animate__fadeInUp" data-wow-delay="1.' . $count . 's" data-bs-toggle="modal" data-bs-target="#cardModal2" data-subtitle="' . $item->subtitle . '" data-image="' . $item->image . '"
                                 data-description="' . $item->description . '">
                                 <div class="card-body">
                                     <div class="imageFrame">
                                         <img src="' . asset($item->image) . '" alt="">
                                     </div>
-                                    <div class="desc">
+                                    <div class="desc d-none">
                                         <span class="count">' . $item->subtitle  . '</span>
                                         <div class="tag"><span class="wrapWrapper"><span class="wrap1"><span class="wrap2">' . $item->title . '</span></span></span></div>
                                     </div>
                                 </div>
                             </div>';
             } else {
-                $card .= '    <div class="card animate__animated animate__fadeInUp animate__delay-' . $index . 's"  data-bs-toggle="modal" data-bs-target="#cardModal" data-subtitle="' . $item->subtitle . '" data-image="' . $item->image . '"
+                $card .= '    <div class="card animate__animated animate__fadeInUp animate__delay-' . $index . 's"  data-bs-toggle="modal" data-bs-target="#cardModal2" data-subtitle="' . $item->subtitle . '" data-image="' . $item->image . '"
                 data-description="' . $item->description . '">
                 <div class="card-body">
                     <div class="imageFrame">
                         <img src="' . asset($item->image) . '" alt="">
                     </div>
-                    <div class="desc">
+                    <div class="desc d-none">
                         <span class="count">' . $item->subtitle  . '</span>
                         <div class="tag"><span class="wrapWrapper"><span class="wrap1"><span class="wrap2">' . $item->title . '</span></span></span></div>
                     </div>
