@@ -50,6 +50,15 @@
             $('#modal-image').attr('src', button.attr('data-image'))
 
         });
+        $('#cardModal2').on('show.bs.modal', function(event) {
+
+            var button = $(event.relatedTarget)
+            var id = button.attr('data-id')
+
+           
+            $('#modal-image2').attr('src', button.attr('data-image'))
+
+        });
 
 
         $('.load-more').click(function() {
