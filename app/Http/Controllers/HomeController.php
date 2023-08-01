@@ -46,7 +46,7 @@ class HomeController extends Controller
                                 </div>
                             </div>';
             }else{
-                $card .= '    <div class="card animate__animated animate__fadeInUp animate__delay-2s' . $count . '"  data-bs-toggle="modal" data-bs-target="#cardModal" data-subtitle="' . $item->subtitle . '" data-image="' . $item->image . '"
+                $card .= '    <div class="card animate__animated animate__fadeInUp animate__delay-' . $count . 's"  data-bs-toggle="modal" data-bs-target="#cardModal" data-subtitle="' . $item->subtitle . '" data-image="' . $item->image . '"
                 data-description="' . $item->description . '">
                 <div class="card-body">
                     <div class="imageFrame">
