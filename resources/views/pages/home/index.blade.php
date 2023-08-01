@@ -13,7 +13,7 @@
                 @endphp
                 @foreach ($highlighted as $item)
                     @if ($loop->index < 5)
-                        <div class="slideItem card wow animate__animated animate__fadeInUp animate__delay-1s" data-wow-duration="1.{{ $count }}s" data-bs-toggle="modal"
+                        <div class="slideItem card wow animate__animated animate__fadeInUp" data-wow-delay="1.{{ $count }}s" data-bs-toggle="modal"
                             data-bs-target="#cardModal" data-image="{{ $item->image }}" data-description="{{ $item->description }}" data-subtitle="{{ $item->subtitle }}">
                             <div class="card-body">
                                 <div class="imageFrame">
@@ -26,7 +26,7 @@
                             </div>
                         </div>
                         @else
-                        <div class="slideItem card wow animate__animated animate__fadeInUp animate__delay-1s" data-wow-duration="1s" data-bs-toggle="modal"
+                        <div class="slideItem card wow animate__animated animate__fadeInUp" data-wow-delay="1s" data-bs-toggle="modal"
                         data-bs-target="#cardModal" data-image="{{ $item->image }}" data-description="{{ $item->description }}" data-subtitle="{{ $item->subtitle }}">
                         <div class="card-body">
                             <div class="imageFrame">
