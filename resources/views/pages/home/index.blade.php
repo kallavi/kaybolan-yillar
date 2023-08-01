@@ -106,7 +106,7 @@
                 <button type="button" class="btn-close shadow-none hover:shadow-none ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
                 <div class="modal-body row gx-0 mx-0 xl:flex flex-column flex-xl-row align-items-center">
                     <div class="imageFrame col-sm-22">
-                        <img id="modal-image" src="{{ asset('assets/images/slider/big/01.png') }}" alt="">
+                        <img id="modal-image2" src="{{ asset('assets/images/slider/big/01.png') }}" alt="">
                     </div>
                     {{-- <div class="paragraph col-sm-10">
                         <span class="count d-none" id="modal-subtitle">45 DK+</span>
