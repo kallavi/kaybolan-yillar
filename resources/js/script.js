@@ -9,7 +9,10 @@ $(".scroll_down").click(function (e) {
   }, 'slow');
 });
 //Scroll down click button bitiş
-
+$("#videoModal").on('hidden.bs.modal', function (e) {
+  console.log("saafafa");
+   $("#videoModal iframe").attr("src", $("#videoModal iframe").attr("src"));
+});
 //Carousel Slider
 $('.kaybolanYillarSlide').slick({
   dots: true,
