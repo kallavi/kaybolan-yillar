@@ -4,13 +4,13 @@
     <section id="homeSection" class="position-relative min-h-screen 2xl:pt-[7.5vh] xl:pt-[8.4vh] lg:pt-[6.4vh] 2xl:pb-[2.5vh] xl:pb-[1.5vh] lg:pb-[1vh] pt-[60px]">
         <div class="headTitle w-100 text-center">
             <img class="d-none d-md-block mx-auto" src="{{ asset('assets/images/kaybolan-yillar-title.svg') }}" alt="">
-            <img class="d-block d-md-none mx-auto" src="{{ asset('assets/images/kaybolan-yillar-title-mobile.svg') }}" alt="">
+            <img class="d-block d-md-none mx-auto" src="{{ asset('assets/images/kaybolan-yillar-mobile.svg') }}" alt="">
         </div>
         <div class="documentCard">
             <span class="wrapWrapper"><span class="wrap1">
                 <span class="wrap2">BASIN TOPLANTISI</span></span></span>
                 <div class="buttons">
-                    <a href="javascript:;" target="_blank"><img src="{{asset ('assets/images/statics/icons/document.svg')}}" alt=""><span>DÖKÜMAN</span> </a>
+                    <a href="javascript:;" target="_blank"><img src="{{asset ('assets/images/statics/icons/document.svg')}}" alt=""><span>DOKÜMAN</span> </a>
                     <a data-bs-toggle="modal" data-bs-target="#videoModal"><img src="{{asset ('assets/images/statics/icons/video.svg')}}" alt=""><span>VİDEO</span> </a>
                 </div>
         </div>

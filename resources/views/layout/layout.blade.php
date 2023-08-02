@@ -15,7 +15,7 @@
 
         <footer class="w-100 text-center">
             <img class="d-none d-lg-block mx-auto" width="301" src="{{ asset('assets/images/kaybolan-yillar-title.svg') }}" alt="">
-            <img class="d-block d-md-none mx-auto" width="75" src="{{ asset('assets/images/kaybolan-yillar-title-mobile.svg') }}" alt="">
+            <img class="d-block d-md-none mx-auto" width="75" src="{{ asset('assets/images/kaybolan-yillar-mobile.svg') }}" alt="">
         </footer>
     </div>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
