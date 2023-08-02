@@ -143,3 +143,11 @@
         </div>
     </div>
 @endsection
+@section('script')
+    <script> 
+        $("#videoModal").on('hidden.bs.modal', function (e) {
+           console.log("saafafa");
+            $("#videoModal iframe").attr("src", $("#videoModal iframe").attr("src"));
+        });
+    </script>
+@endsection
