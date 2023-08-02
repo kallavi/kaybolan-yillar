@@ -134,7 +134,10 @@
             <div class="modal-content">
                 <button type="button" class="btn-close shadow-none hover:shadow-none ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
                 <div class="modal-body">
-                    <iframe width="100%" height="auto" src="https://www.youtube.com/embed/7DnCD7kOEqE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <div class="modal-video">
+                        <iframe  src="https://www.youtube.com/embed/7DnCD7kOEqE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                    </div>
                 </div>
             </div>
         </div>
