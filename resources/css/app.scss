@@ -109,6 +109,13 @@ body {
             position: absolute;
             //    top:10vh;
             top: 4vh;
+            right: 30vw;
+        }
+        @media screen and (max-width: 480px) { 
+            right: 25vw;
+        }
+        @media screen and (max-width: 380px) { 
+            right: 20vw;
         }
         img {
             @media screen and (max-width: 1440px),
@@ -133,10 +140,13 @@ body {
         z-index: 99;
         @media screen and (max-width:1100px) {
             position: absolute;
-            top: 10vh;
+            transform: 10vh; 
             right: 0;
             flex-direction: column-reverse;
             width: 55px;
+        }
+        @media screen and (max-width: 768px) {  
+            top: 4vh; 
         }
         // @media screen and (max-width: 768px) {
         //     position: absolute;
@@ -152,9 +162,13 @@ body {
             padding: 0 13px;
             height: 50px;
             @media screen and (max-width:1100px) {
-                height: 137px;
+                // height: 137px;
+                height: 150px;
                 width: 55px;
                 overflow: hidden;
+            }
+            @media screen and (min-width:1100px) {
+                transform: rotate(-1deg);
             }
             .wrap1{
                 background: #474747;
@@ -170,7 +184,10 @@ body {
                     font-family: "amertype_md_btmedium";
                     font-size: 30px;
                     letter-spacing: -3.3px;
-                    transform: rotate(-1deg);
+                    // transform: rotate(-1deg);
+                    @media screen and (min-width:1100px) {
+                        transform: rotate(1deg);
+                    }
                     display: inline-block;
                     @media screen and (max-width:1100px) {
                         font-size: 14px;
@@ -201,10 +218,16 @@ body {
                 text-decoration: none;
                 transition: all .3s linear;
                 cursor: pointer;
+                span{
+                    @media screen and (min-width:1100px) {
+                        transform: rotate(1deg);
+                    }
+                }
                 
                 @media screen and (max-width:1100px) {
                     flex-direction: column;
-                    width: 100%;
+                    // width: 100%;
+                    width: 75%;
                     height: 50%;
                     span{
                         display: none;
@@ -212,11 +235,14 @@ body {
                     &+a{
                         border-top:1px solid #ffffff;
                     }
-                }
+                } 
                 img{
                     margin-right: 8px;
                     @media screen and (max-width:1100px) {
                        margin-right: 0;
+                    }
+                    @media screen and (min-width:1100px) {
+                        transform: rotate(1deg);
                     }
                 }
                 @media screen and (min-width:991.98px) {
@@ -224,6 +250,7 @@ body {
                         background: #474747;
                     }
                 }
+              
             }
             @media screen and (max-width:1100px){
                 width: 100%;
@@ -231,6 +258,9 @@ body {
                 flex-direction: column;
                 padding: 0 2px;
                 background: #E80D0D;
+            }
+            @media screen and (min-width:1100px) {
+                transform: rotate(-1deg);
             }
         }
 
