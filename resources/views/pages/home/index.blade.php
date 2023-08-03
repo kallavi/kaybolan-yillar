@@ -8,11 +8,11 @@
         </div>
         <div class="documentCard">
             <span class="wrapWrapper"><span class="wrap1">
-                <span class="wrap2">BASIN TOPLANTISI</span></span></span>
-                <div class="buttons">
-                    <a href="javascript:;" target="_blank"><img src="{{asset ('assets/images/statics/icons/document.svg')}}" alt=""><span>DOKÜMAN</span> </a>
-                    <a data-bs-toggle="modal" data-bs-target="#videoModal"><img src="{{asset ('assets/images/statics/icons/video.svg')}}" alt=""><span>VİDEO</span> </a>
-                </div>
+                    <span class="wrap2">BASIN TOPLANTISI</span></span></span>
+            <div class="buttons">
+                <a href="{{ asset($press->pdf) }}" target="_blank"><img src="{{ asset('assets/images/statics/icons/document.svg') }}" alt=""><span>DOKÜMAN</span> </a>
+                <a data-bs-toggle="modal" data-bs-target="#videoModal"><img src="{{ asset('assets/images/statics/icons/video.svg') }}" alt=""><span>VİDEO</span> </a>
+            </div>
         </div>
         <div class="carouselWrapper md:pt-[25px]">
             <div class="kaybolanYillarSlide cards">
@@ -33,24 +33,24 @@
                                 </div>
                             </div>
                         </div>
-                        @else
-                        <div class="slideItem card wow animate__animated animate__fadeInUp" data-wow-delay="1s" data-bs-toggle="modal"
-                        data-bs-target="#cardModal" data-image="{{ $item->image }}" data-description="{{ $item->description }}" data-subtitle="{{ $item->subtitle }}">
-                        <div class="card-body">
-                            <div class="imageFrame">
-                                <img src="{{ asset($item->image) }}" alt="">
-                            </div>
-                            <div class="desc">
-                                <span class="count">{{ $item->subtitle }}</span>
-                                <div class="tag"><span class="wrapWrapper"><span class="wrap1"><span class="wrap2">{{ $item->title }}</span></span></span></div>
+                    @else
+                        <div class="slideItem card wow animate__animated animate__fadeInUp" data-wow-delay="1s" data-bs-toggle="modal" data-bs-target="#cardModal"
+                            data-image="{{ $item->image }}" data-description="{{ $item->description }}" data-subtitle="{{ $item->subtitle }}">
+                            <div class="card-body">
+                                <div class="imageFrame">
+                                    <img src="{{ asset($item->image) }}" alt="">
+                                </div>
+                                <div class="desc">
+                                    <span class="count">{{ $item->subtitle }}</span>
+                                    <div class="tag"><span class="wrapWrapper"><span class="wrap1"><span class="wrap2">{{ $item->title }}</span></span></span></div>
+                                </div>
                             </div>
                         </div>
-                    </div>
                     @endif
                     @php
                         $count++;
                         $count++;
-                         
+                        
                     @endphp
                 @endforeach
 
@@ -64,11 +64,11 @@
         </div>
     </section>
     <section id="allCardsSection" class="md:pb-[110px] pb-[54px] lg:px-[1.75rem] ">
-            <div class="cards row row-cols-2 row-cols-xxl-5 row-cols-xl-4 row-cols-lg-3 row-cols-md-2 gx-0 px-0 mx-auto cardDiv" id="cardDiv">
-                {{-- <div class="cards d-flex justify-content-center flex-wrap cardDiv" id="cardDiv"> --}}
+        <div class="cards row row-cols-2 row-cols-xxl-5 row-cols-xl-4 row-cols-lg-3 row-cols-md-2 gx-0 px-0 mx-auto cardDiv" id="cardDiv">
+            {{-- <div class="cards d-flex justify-content-center flex-wrap cardDiv" id="cardDiv"> --}}
 
 
-                {{-- @foreach ($project as $item)
+            {{-- @foreach ($project as $item)
                     <div class="card wow animate__animated animate__fadeInUp animate__faster" data-bs-toggle="modal" data-bs-target="#cardModal" data-image="{{ $item->image }}"
                         data-description="{{ $item->description }}">
                         <div class="card-body">
@@ -83,7 +83,7 @@
                     </div>
                 @endforeach --}}
 
-            </div>
+        </div>
     </section>
 
     <div class="mx-auto text-center w-100 md:pb-[70px] pb-[40px]">
@@ -115,7 +115,7 @@
                 <button type="button" class="btn-close shadow-none hover:shadow-none ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
                 <div class="modal-body">
                     {{-- <div class="imageFrame col-sm-22"> --}}
-                        <img id="modal-image2" class="mx-auto" src="{{ asset('assets/images/slider/big/01.png') }}" alt="">
+                    <img id="modal-image2" class="mx-auto" src="{{ asset('assets/images/slider/big/01.png') }}" alt="">
                     {{-- </div> --}}
                     {{-- <div class="paragraph col-sm-10">
                         <span class="count d-none" id="modal-subtitle">45 DK+</span>
@@ -135,7 +135,8 @@
                 <button type="button" class="btn-close shadow-none hover:shadow-none ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
                 <div class="modal-body">
                     <div class="modal-video">
-                        <iframe  src="https://www.youtube.com/embed/7DnCD7kOEqE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        <iframe src="https://www.youtube.com/embed/{{ $press->video }}" title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
                     </div>
                 </div>
@@ -144,9 +145,9 @@
     </div>
 @endsection
 @section('script')
-    <script> 
-        $("#videoModal").on('hidden.bs.modal', function (e) {
-           console.log("saafafa");
+    <script>
+        $("#videoModal").on('hidden.bs.modal', function(e) {
+            
             $("#videoModal iframe").attr("src", $("#videoModal iframe").attr("src"));
         });
     </script>

@@ -38,6 +38,19 @@ Route::prefix(env('ADMIN_PREFIX'))->group(function () {
         ]
     );
     Route::get('project/delete/{id}', [\App\Http\Controllers\Backoffice\ProjectController::class, 'delete'])->name('admin.project.delete');
+
+
+    Route::resource(
+        'press',
+        \App\Http\Controllers\Backoffice\PressController::class,
+        [
+            'names' => [
+                'edit' => 'admin.press.edit',
+                'index' => 'admin.press.index',
+                'update' => 'admin.press.update',
+            ]
+        ]
+    );
 });
 
 Route::get('/', [HomeController::class, 'index'])->name('home');

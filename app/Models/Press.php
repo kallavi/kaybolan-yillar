@@ -5,20 +5,15 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Project extends Model
+class Press extends Model
 {
     use HasFactory;
 
+    
     protected $fillable = [
-        'title',
-        'slug',
-        'highlighted',
-        'description',
-        'image',
-        'status',
-        'subtitle',
-        'sort',
-
+        'video',
+        'pdf',
     ];
 
+    
 }
