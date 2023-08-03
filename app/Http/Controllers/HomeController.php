@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Press;
 use App\Models\Project;
 use Illuminate\Http\Request;
 
@@ -13,9 +14,10 @@ class HomeController extends Controller
     public function index()
     {
         $highlighted = Project::where('status', 1)->where('highlighted', 'on')->orderByRaw('ISNULL(sort), sort ASC')->orderBy('title')->get();
+        $press = Press::where('id', 1)->first();
 
 
-        return view('pages.home.index', ['highlighted' => $highlighted]);
+        return view('pages.home.index', ['highlighted' => $highlighted, 'press' => $press]);
     }
     public function getProject(Request $request)
     {
