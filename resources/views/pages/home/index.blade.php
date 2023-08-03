@@ -4,7 +4,15 @@
     <section id="homeSection" class="position-relative min-h-screen 2xl:pt-[7.5vh] xl:pt-[8.4vh] lg:pt-[6.4vh] 2xl:pb-[2.5vh] xl:pb-[1.5vh] lg:pb-[1vh] pt-[60px]">
         <div class="headTitle w-100 text-center">
             <img class="d-none d-md-block mx-auto" src="{{ asset('assets/images/kaybolan-yillar-title.svg') }}" alt="">
-            <img class="d-block d-md-none mx-auto" src="{{ asset('assets/images/kaybolan-yillar-title-mobile.svg') }}" alt="">
+            <img class="d-block d-md-none mx-auto" src="{{ asset('assets/images/kaybolan-yillar-mobile.svg') }}" alt="">
+        </div>
+        <div class="documentCard">
+            <span class="wrapWrapper"><span class="wrap1">
+                <span class="wrap2">BASIN TOPLANTISI</span></span></span>
+                <div class="buttons">
+                    <a href="javascript:;" target="_blank"><img src="{{asset ('assets/images/statics/icons/document.svg')}}" alt=""><span>DOKÜMAN</span> </a>
+                    <a data-bs-toggle="modal" data-bs-target="#videoModal"><img src="{{asset ('assets/images/statics/icons/video.svg')}}" alt=""><span>VİDEO</span> </a>
+                </div>
         </div>
         <div class="carouselWrapper md:pt-[25px]">
             <div class="kaybolanYillarSlide cards">
@@ -120,4 +128,26 @@
         </div>
     </div>
     <!----Detay Modal Bitiş-->
+
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-fullscreen">
+            <div class="modal-content">
+                <button type="button" class="btn-close shadow-none hover:shadow-none ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <div class="modal-video">
+                        <iframe  src="https://www.youtube.com/embed/7DnCD7kOEqE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+@endsection
+@section('script')
+    <script> 
+        $("#videoModal").on('hidden.bs.modal', function (e) {
+           console.log("saafafa");
+            $("#videoModal iframe").attr("src", $("#videoModal iframe").attr("src"));
+        });
+    </script>
 @endsection
