@@ -20,13 +20,13 @@ $('.kaybolanYillarSlide').slick({
   infinite: false,
   speed: 300,
   slidesToShow: 5,
-  slidesToScroll: 3,
+  slidesToScroll: 5,
   responsive: [
     {
       breakpoint: 1300,
       settings: {
         slidesToShow: 4,
-        slidesToScroll: 3,
+        slidesToScroll: 4,
         infinite: true,
         dots: true,
       }
