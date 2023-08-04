@@ -14,6 +14,16 @@ $("#videoModal").on('hidden.bs.modal', function (e) {
    $("#videoModal iframe").attr("src", $("#videoModal iframe").attr("src"));
 });
 //Carousel Slider
+$('.kaybolanYillarSlide').on('init reInit afterChange', function(event, slick, currentSlide) {
+  var slideCount = slick.slideCount;
+  var visibleSlides = slick.options.slidesToShow;
+  
+  if (slideCount <= visibleSlides) {
+    $('.slick-dots').hide(); // Dots'ları gizle
+  } else {
+    $('.slick-dots').show(); // Dots'ları göster
+  }
+});
 $('.kaybolanYillarSlide').slick({
   dots: true,
   arrows:false,
@@ -63,6 +73,7 @@ $('.kaybolanYillarSlide').slick({
     },
   ]
 });
+
 
 document.addEventListener("DOMContentLoaded", function () {
   const yearCounter = document.getElementById("yearCounter");
